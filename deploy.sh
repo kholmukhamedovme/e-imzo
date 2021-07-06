@@ -9,8 +9,8 @@ mv ./E-IMZO/ ./tmp/
 
 # Собираем образ
 cd ./tmp/
-javapackager -deploy -verbose -native image -outdir ../out/ -outfile E-IMZO -srcdir ./ -srcfiles E-IMZO.jar -appclass uz.yt.eimzo.websocket.server.Application -name "E-IMZO" -title "E-IMZO" -BappVersion=3.41 -Bicon=../e-imzo.icns -BclassPath=lib/ -BmainJar=E-IMZO.jar
-cp -r lib/ ../out/E-IMZO.app/Contents/Java/lib/
+jpackage --input ./ --name E-IMZO --main-class uz.yt.eimzo.websocket.server.Application --main-jar E-IMZO.jar --icon ../e-imzo.$
+mv E-IMZO-1.0.dmg ../
 
 # Удаляем временную папку и архив
 cd ..
