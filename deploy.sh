@@ -9,7 +9,7 @@ mv ./E-IMZO/ ./tmp/
 
 # Собираем образ
 cd ./tmp/
-jpackage --input ./ --name E-IMZO --main-class uz.yt.eimzo.websocket.server.Application --main-jar E-IMZO.jar --icon ../e-imzo.$
+jpackage --input ./ --name E-IMZO --main-class uz.yt.eimzo.websocket.server.Application --main-jar E-IMZO.jar --icon ../e-imzo.icns --verbose
 mv E-IMZO-1.0.dmg ../
 
 # Удаляем временную папку и архив
