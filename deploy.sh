@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Скачиваем архив E-IMZO
-curl -o E-IMZO-v3.41.tar.gz http://dls.yt.uz/E-IMZO-v3.41.tar.gz
+curl -o E-IMZO-v4.15.tar.gz https://dls.yt.uz/E-IMZO-v4.15.tar.gz
 
 # Разархивируем E-IMZO
 tar -xzf E-IMZO-v*.tar.gz
